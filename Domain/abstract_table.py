@@ -1,7 +1,7 @@
 import sqlite3
 
 from abc import ABC, abstractmethod
-from main import sql_db
+sql_db = 'parsed_data.db'
 
 
 class AbstractTable(ABC):
@@ -19,7 +19,7 @@ class AbstractTable(ABC):
         pass
 
     @abstractmethod
-    def parse_string(self):
+    def parse_string(self, *args):
         pass
 
     @property

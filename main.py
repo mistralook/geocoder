@@ -1,9 +1,13 @@
 import xml.parsers.expat as xml_parser
 import sqlite3 as sql
-import json
+from Domain import Nodes, Tags, NodesTags, \
+    WaysNodes, WaysTags, Relations, RelationTags
 
 # osm_db = 'NORMAL-DB.osm'
-osm_db = 'prikol.osm'
+# osm_db = 'way_test.osm'
+# osm_db = 'node_test.osm'
+# osm_db = 'relation_test.osm'
+osm_db = 'mixed_test.osm'
 sql_db = 'parsed_data.db'
 
 
@@ -11,82 +15,63 @@ class Parser:
     def __init__(self):
         self.current_table = ''
         self.current_id = ''
+        self.nodes = Nodes()
+        self.tags = Tags()
+        self.nodes_tags = NodesTags()
+        self.ways_nodes = WaysNodes()
+        self.ways_tags = WaysTags()
+        self.relations = Relations()
+        self.relation_tags = RelationTags()
+        self.parent_element = ()
+        self.tag_id = 1
 
-    def parse_node(self, attr):
-        id = attr['id']
-        lat = attr['lat']
-        lon = attr['lon']
-        self.current_id = id
-        self.current_table = 'nodes'
-        tags = dict()
-        with sql.connect(sql_db) as conn:
-            c = conn.cursor()
-            tags = json.dumps(tags)
-            values = (id, tags, lat, lon)
-            c.execute(f'INSERT INTO nodes VALUES (?,?,?,?)', values)
+    def parse_string(self, string, name):
+        if name == "relation":
+            self.parent_element = (string['id'], 'relation')
 
-    def parse_way(self, attr):
-        id = attr['id']
-        print(id, 'iD ')
-        tags = dict()
-        nodes = list()
-        self.current_id = id
-        self.current_table = 'ways'
-        with sql.connect(sql_db) as conn:
-            c = conn.cursor()
-            tags = json.dumps(tags)
-            nodes = json.dumps(nodes)
-            values = (id, tags, nodes)
-            c.execute(f'INSERT INTO ways VALUES (?,?,?)', values)
+        if name == "member":
+            if string['role'] != '':
+                self.relations.parse_string(self.parent_element[0],
+                                            string['type'],
+                                            string['ref'],
+                                            string['role'])
+            else:
+                self.relations.parse_string(self.parent_element[0],
+                                            string['type'],
+                                            string['ref'],
+                                            '')
 
-    def parse_relation(self, attr):
-        pass
+        if name == "way":
+            self.parent_element = (string['id'], 'way')
 
-    def parse_tag(self, attr):
-        with sql.connect(sql_db) as connection:
-            c = connection.cursor()
-            k = attr['k']
-            v = attr['v']
-            c.execute(
-                f'''SELECT tags FROM {self.current_table} WHERE id=?''',
-                (self.current_id,))
-            tags = json.loads(*c.fetchone())
-            tags[k] = v
-            tags = json.dumps(tags)
-            c.execute(
-                f"""UPDATE {self.current_table} 
-                    SET tags='{tags}' WHERE id='{self.current_id}'""")
-            c.fetchall()
-            c.close()
+        if name == "nd":
+            self.ways_nodes.parse_string(self.parent_element[0],
+                                         string['ref'])
 
-    def parse_nd(self, attr):
-        with sql.connect(sql_db) as conn:
-            c = conn.cursor()
-            ref = attr['ref']
-            print(ref)
-            c.execute(
-                f'''SELECT nodes FROM {self.current_table} WHERE id=?''',
-                (self.current_id,))
-            print(*c.fetchone())
-            nodes = json.loads(*c.fetchone())
-            nodes.append(ref)
-            nodes = json.dumps(nodes)
-            c.execute(f"""UPDATE {self.current_table} 
-                        SET nodes='{nodes}' WHERE id='{self.current_id}'""")
-            c.fetchall()
-            c.close()
+        if name == "node":
+            if '/' in string:
+                self.nodes.parse_string(string)
+            elif '/' not in string:
+                self.parent_element = (string['id'], 'node')
+                self.nodes.parse_string(string)
+
+        if name == "tag":
+            self.tags.parse_string(string, self.tag_id)
+            if self.parent_element[1] == 'node':
+                self.nodes_tags.parse_string(self.parent_element[0],
+                                             self.tag_id)
+                self.tag_id += 1
+            if self.parent_element[1] == 'way':
+                self.ways_tags.parse_string(self.parent_element[0],
+                                            self.tag_id)
+                self.tag_id += 1
+            if self.parent_element[1] == 'relation':
+                self.relation_tags.parse_string(self.parent_element[0],
+                                                self.tag_id)
+                self.tag_id += 1
 
     def parse_db(self, name, attr):
-        # if name == 'relation':
-        #     ps.parse_relation(attr)
-        if name == 'way':
-            self.parse_way(attr)
-        if name == 'nd':
-            self.parse_nd(attr)
-        # if name == 'node':
-        #     self.parse_node(attr)
-        if name == 'tag':
-            self.parse_tag(attr)
+        self.parse_string(attr, name)
 
 
 def main():
@@ -95,26 +80,25 @@ def main():
         c = con.cursor()
         c.execute(
             'CREATE TABLE IF NOT EXISTS Relations '
-            '("id" PRIMARY KEY, "member_type", "ref_way", '
-            '"ref_node", "role");')
+            '("id" INTEGER, "member_type", "ref", "role");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS RelationTags '
-            '("id" PRIMARY KEY, "id_relation", "id_tag");')
+            '("id" INTEGER PRIMARY KEY, "id_relation", "id_tag");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS WayTags '
-            '("id" PRIMARY KEY, "id_way", "id_tag");')
+            '("id" INTEGER PRIMARY KEY, "id_way", "id_tag");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS WayNodes '
-            '("id" PRIMARY KEY, "id_way", "id_node");')
+            '("id" INTEGER PRIMARY KEY, "id_way", "id_node");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS Nodes '
             '("id" PRIMARY KEY, "lat", "lon");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS NodesTags '
-            '("id" PRIMARY KEY, "id_node", "id_tag");')
+            '("id" INTEGER PRIMARY KEY, "id_node", "id_tag");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS Tags '
-            '("id" PRIMARY KEY, "key", "value");')
+            '("id" INTEGER PRIMARY KEY, "key", "value");')
 
     parser = xml_parser.ParserCreate()
     parser.StartElementHandler = ps.parse_db
