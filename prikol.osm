@@ -1,0 +1,962 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmconvert 0.8.8" timestamp="2020-11-08T21:41:03Z">
+    <way id="458574635" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555801"/>
+		<nd ref="4545555798"/>
+		<nd ref="4545555799"/>
+		<nd ref="4545555800"/>
+		<nd ref="4545555801"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574637" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555805"/>
+		<nd ref="4545555802"/>
+		<nd ref="4545555803"/>
+		<nd ref="4545555804"/>
+		<nd ref="4545555805"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574638" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555809"/>
+		<nd ref="4545555806"/>
+		<nd ref="4545555807"/>
+		<nd ref="4545555808"/>
+		<nd ref="4545555809"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574640" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555815"/>
+		<nd ref="4545555812"/>
+		<nd ref="4545555810"/>
+		<nd ref="4545555813"/>
+		<nd ref="4545555814"/>
+		<nd ref="4545555811"/>
+		<nd ref="4545555815"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574642" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555817"/>
+		<nd ref="4545555816"/>
+		<tag k="foot" v="yes"/>
+		<tag k="name" v="Lon-y-Coed"/>
+		<tag k="horse" v="yes"/>
+		<tag k="lanes" v="2"/>
+		<tag k="access" v="yes"/>
+		<tag k="oneway" v="no"/>
+		<tag k="bicycle" v="yes"/>
+		<tag k="highway" v="residential"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="cycleway" v="no"/>
+		<tag k="maxspeed" v="30 mph"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="motor_vehicle" v="yes"/>
+	</way>
+	<way id="458574646" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555827"/>
+		<nd ref="4545555819"/>
+		<nd ref="4545555818"/>
+		<nd ref="1179584200"/>
+		<tag k="highway" v="path"/>
+	</way>
+	<way id="458574648" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555852"/>
+		<nd ref="4545555849"/>
+		<nd ref="4545555850"/>
+		<nd ref="4545555851"/>
+		<nd ref="4545555852"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574650" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555858"/>
+		<nd ref="4545555855"/>
+		<nd ref="4545555856"/>
+		<nd ref="4545555857"/>
+		<nd ref="4545555854"/>
+		<nd ref="4545555853"/>
+		<nd ref="4545555858"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574652" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555862"/>
+		<nd ref="4545555859"/>
+		<nd ref="4545555860"/>
+		<nd ref="4545555861"/>
+		<nd ref="4545555862"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574654" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555866"/>
+		<nd ref="4545555865"/>
+		<nd ref="4545555864"/>
+		<nd ref="4545555863"/>
+		<nd ref="4545555866"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574655" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555870"/>
+		<nd ref="4545555867"/>
+		<nd ref="4545555868"/>
+		<nd ref="4545555869"/>
+		<nd ref="4545555870"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574657" version="1" timestamp="2016-12-08T21:40:11Z" changeset="0">
+		<nd ref="4545555878"/>
+		<nd ref="4545555874"/>
+		<nd ref="4545555872"/>
+		<nd ref="4545555871"/>
+		<nd ref="4545555873"/>
+		<nd ref="4545555877"/>
+		<nd ref="4545555876"/>
+		<nd ref="4545555875"/>
+		<nd ref="4545555878"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574659" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555882"/>
+		<nd ref="4545555879"/>
+		<nd ref="4545555880"/>
+		<nd ref="4545555881"/>
+		<nd ref="4545555882"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574661" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555886"/>
+		<nd ref="4545555883"/>
+		<nd ref="4545555884"/>
+		<nd ref="4545555885"/>
+		<nd ref="4545555886"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574662" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555890"/>
+		<nd ref="4545555887"/>
+		<nd ref="4545555888"/>
+		<nd ref="4545555889"/>
+		<nd ref="4545555890"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574664" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555894"/>
+		<nd ref="4545555893"/>
+		<nd ref="4545555892"/>
+		<nd ref="4545555891"/>
+		<nd ref="4545555894"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574666" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555898"/>
+		<nd ref="4545555895"/>
+		<nd ref="4545555896"/>
+		<nd ref="4545555897"/>
+		<nd ref="4545555898"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574667" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555902"/>
+		<nd ref="4545555899"/>
+		<nd ref="4545555900"/>
+		<nd ref="4545555901"/>
+		<nd ref="4545555902"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574669" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555910"/>
+		<nd ref="4545555907"/>
+		<nd ref="4545555906"/>
+		<nd ref="4545555904"/>
+		<nd ref="4545555903"/>
+		<nd ref="4545555905"/>
+		<nd ref="4545555908"/>
+		<nd ref="4545555909"/>
+		<nd ref="4545555910"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574671" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555914"/>
+		<nd ref="4545555911"/>
+		<nd ref="4545555912"/>
+		<nd ref="4545555913"/>
+		<nd ref="4545555914"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574673" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555918"/>
+		<nd ref="4545555915"/>
+		<nd ref="4545555916"/>
+		<nd ref="4545555917"/>
+		<nd ref="4545555918"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574674" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555922"/>
+		<nd ref="4545555921"/>
+		<nd ref="4545555920"/>
+		<nd ref="4545555919"/>
+		<nd ref="4545555922"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574676" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555926"/>
+		<nd ref="4545555923"/>
+		<nd ref="4545555924"/>
+		<nd ref="4545555925"/>
+		<nd ref="4545555926"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574678" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555930"/>
+		<nd ref="4545555929"/>
+		<nd ref="4545555928"/>
+		<nd ref="4545555927"/>
+		<nd ref="4545555930"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574680" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555934"/>
+		<nd ref="4545555931"/>
+		<nd ref="4545555932"/>
+		<nd ref="4545555933"/>
+		<nd ref="4545555934"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574682" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555938"/>
+		<nd ref="4545555937"/>
+		<nd ref="4545555936"/>
+		<nd ref="4545555935"/>
+		<nd ref="4545555938"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574683" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555942"/>
+		<nd ref="4545555939"/>
+		<nd ref="4545555940"/>
+		<nd ref="4545555941"/>
+		<nd ref="4545555942"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574685" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555952"/>
+		<nd ref="4545555946"/>
+		<nd ref="4545555945"/>
+		<nd ref="4545555949"/>
+		<nd ref="4545555943"/>
+		<nd ref="4545555944"/>
+		<nd ref="4545555947"/>
+		<nd ref="4545555948"/>
+		<nd ref="4545555950"/>
+		<nd ref="4545555951"/>
+		<nd ref="4545555952"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574687" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555956"/>
+		<nd ref="4545555953"/>
+		<nd ref="4545555954"/>
+		<nd ref="4545555955"/>
+		<nd ref="4545555956"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574689" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555960"/>
+		<nd ref="4545555957"/>
+		<nd ref="4545555958"/>
+		<nd ref="4545555959"/>
+		<nd ref="4545555960"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574691" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555966"/>
+		<nd ref="4545555962"/>
+		<nd ref="4545555961"/>
+		<nd ref="4545555963"/>
+		<nd ref="4545555964"/>
+		<nd ref="4545555965"/>
+		<nd ref="4545555966"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574693" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555968"/>
+		<nd ref="4545555967"/>
+		<tag k="foot" v="yes"/>
+		<tag k="name" v="Maes Bryn"/>
+		<tag k="horse" v="yes"/>
+		<tag k="lanes" v="2"/>
+		<tag k="access" v="yes"/>
+		<tag k="oneway" v="no"/>
+		<tag k="bicycle" v="yes"/>
+		<tag k="highway" v="residential"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="cycleway" v="no"/>
+		<tag k="maxspeed" v="30 mph"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="motor_vehicle" v="yes"/>
+	</way>
+	<way id="458574696" version="1" timestamp="2016-12-08T21:40:12Z" changeset="0">
+		<nd ref="4545555970"/>
+		<nd ref="4545555969"/>
+		<tag k="foot" v="yes"/>
+		<tag k="name" v="Heol-y-dail"/>
+		<tag k="horse" v="yes"/>
+		<tag k="lanes" v="2"/>
+		<tag k="access" v="yes"/>
+		<tag k="oneway" v="no"/>
+		<tag k="bicycle" v="yes"/>
+		<tag k="highway" v="residential"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="cycleway" v="no"/>
+		<tag k="maxspeed" v="30 mph"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="motor_vehicle" v="yes"/>
+	</way>
+	<way id="458574697" version="2" timestamp="2016-12-08T22:38:21Z" changeset="0">
+		<nd ref="4545555997"/>
+		<nd ref="4545555996"/>
+		<nd ref="4545555995"/>
+		<nd ref="4545555994"/>
+		<nd ref="4545555993"/>
+		<nd ref="4545555992"/>
+		<nd ref="4545555991"/>
+		<nd ref="4545555990"/>
+		<nd ref="4545555989"/>
+		<nd ref="4545555988"/>
+		<nd ref="4545555987"/>
+		<nd ref="4545555986"/>
+		<nd ref="4545555985"/>
+		<nd ref="4545555984"/>
+		<nd ref="4545555983"/>
+		<nd ref="4545555982"/>
+		<nd ref="4545555981"/>
+		<nd ref="4545555980"/>
+		<nd ref="4545555979"/>
+		<nd ref="4545555978"/>
+		<nd ref="4545555977"/>
+		<nd ref="4545555976"/>
+		<nd ref="4545555975"/>
+		<nd ref="4545555974"/>
+		<nd ref="4545555973"/>
+		<nd ref="4545555972"/>
+		<nd ref="4545555971"/>
+		<nd ref="4545555997"/>
+	</way>
+	<way id="458574698" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556004"/>
+		<nd ref="4545556003"/>
+		<nd ref="4545556002"/>
+		<nd ref="4545556001"/>
+		<nd ref="4545556000"/>
+		<nd ref="4545555999"/>
+		<nd ref="4545555998"/>
+		<tag k="highway" v="path"/>
+	</way>
+	<way id="458574699" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556011"/>
+		<nd ref="4545556007"/>
+		<nd ref="4545556008"/>
+		<nd ref="4545556009"/>
+		<nd ref="4545556011"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574700" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556013"/>
+		<nd ref="4545556010"/>
+		<nd ref="4545556011"/>
+		<nd ref="4545556012"/>
+		<nd ref="4545556013"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574701" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556017"/>
+		<nd ref="4545556014"/>
+		<nd ref="4545556015"/>
+		<nd ref="4545556016"/>
+		<nd ref="4545556006"/>
+		<nd ref="4545556005"/>
+		<nd ref="4545556017"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574702" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556021"/>
+		<nd ref="4545556018"/>
+		<nd ref="4545556019"/>
+		<nd ref="4545556020"/>
+		<nd ref="4545556021"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574703" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556025"/>
+		<nd ref="4545556022"/>
+		<nd ref="4545556023"/>
+		<nd ref="4545556024"/>
+		<nd ref="4545556025"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574704" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556029"/>
+		<nd ref="4545556026"/>
+		<nd ref="4545556027"/>
+		<nd ref="4545556028"/>
+		<nd ref="4545556029"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574705" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556035"/>
+		<nd ref="4545556031"/>
+		<nd ref="4545556030"/>
+		<nd ref="4545556032"/>
+		<nd ref="4545556033"/>
+		<nd ref="4545556034"/>
+		<nd ref="4545556035"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574706" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556041"/>
+		<nd ref="4545556038"/>
+		<nd ref="4545556039"/>
+		<nd ref="4545556040"/>
+		<nd ref="4545556037"/>
+		<nd ref="4545556036"/>
+		<nd ref="4545556041"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574707" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556045"/>
+		<nd ref="4545556044"/>
+		<nd ref="4545556043"/>
+		<nd ref="4545556042"/>
+		<nd ref="4545556045"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574708" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556053"/>
+		<nd ref="4545556046"/>
+		<nd ref="4545556047"/>
+		<nd ref="4545556050"/>
+		<nd ref="4545556051"/>
+		<nd ref="4545556052"/>
+		<nd ref="4545556048"/>
+		<nd ref="4545556049"/>
+		<nd ref="4545556053"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574709" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556059"/>
+		<nd ref="4545556056"/>
+		<nd ref="4545556057"/>
+		<nd ref="4545556058"/>
+		<nd ref="4545556054"/>
+		<nd ref="4545556055"/>
+		<nd ref="4545556059"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574710" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556063"/>
+		<nd ref="4545556060"/>
+		<nd ref="4545556061"/>
+		<nd ref="4545556062"/>
+		<nd ref="4545556063"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574711" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556067"/>
+		<nd ref="4545556064"/>
+		<nd ref="4545556065"/>
+		<nd ref="4545556066"/>
+		<nd ref="4545556067"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574712" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556073"/>
+		<nd ref="4545556072"/>
+		<nd ref="4545556071"/>
+		<nd ref="4545556070"/>
+		<nd ref="4545556073"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574713" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556077"/>
+		<nd ref="4545556076"/>
+		<nd ref="4545556075"/>
+		<nd ref="4545556074"/>
+		<nd ref="4545556068"/>
+		<nd ref="4545556069"/>
+		<nd ref="4545556077"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574714" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556081"/>
+		<nd ref="4545556078"/>
+		<nd ref="4545556079"/>
+		<nd ref="4545556080"/>
+		<nd ref="4545556081"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574715" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556085"/>
+		<nd ref="4545556084"/>
+		<nd ref="4545556083"/>
+		<nd ref="4545556082"/>
+		<nd ref="4545556085"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574716" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556089"/>
+		<nd ref="4545556086"/>
+		<nd ref="4545556087"/>
+		<nd ref="4545556088"/>
+		<nd ref="4545556089"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574717" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556093"/>
+		<nd ref="4545556090"/>
+		<nd ref="4545556091"/>
+		<nd ref="4545556092"/>
+		<nd ref="4545556093"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574718" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556097"/>
+		<nd ref="4545556094"/>
+		<nd ref="4545556095"/>
+		<nd ref="4545556096"/>
+		<nd ref="4545556097"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574719" version="1" timestamp="2016-12-08T21:40:13Z" changeset="0">
+		<nd ref="4545556101"/>
+		<nd ref="4545556098"/>
+		<nd ref="4545556099"/>
+		<nd ref="4545556100"/>
+		<nd ref="4545556101"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574720" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556105"/>
+		<nd ref="4545556102"/>
+		<nd ref="4545556103"/>
+		<nd ref="4545556104"/>
+		<nd ref="4545556105"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574721" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556109"/>
+		<nd ref="4545556106"/>
+		<nd ref="4545556107"/>
+		<nd ref="4545556108"/>
+		<nd ref="4545556109"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574722" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556115"/>
+		<nd ref="4545556112"/>
+		<nd ref="4545556113"/>
+		<nd ref="4545556110"/>
+		<nd ref="4545556111"/>
+		<nd ref="4545556114"/>
+		<nd ref="4545556115"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574723" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556119"/>
+		<nd ref="4545556116"/>
+		<nd ref="4545556117"/>
+		<nd ref="4545556118"/>
+		<nd ref="4545556119"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574724" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556123"/>
+		<nd ref="4545556120"/>
+		<nd ref="4545556121"/>
+		<nd ref="4545556122"/>
+		<nd ref="4545556123"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574725" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556133"/>
+		<nd ref="4545556124"/>
+		<nd ref="4545556125"/>
+		<nd ref="4545556130"/>
+		<nd ref="4545556131"/>
+		<nd ref="4545556127"/>
+		<nd ref="4545556126"/>
+		<nd ref="4545556132"/>
+		<nd ref="4545556128"/>
+		<nd ref="4545556129"/>
+		<nd ref="4545556133"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574726" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556137"/>
+		<nd ref="4545556134"/>
+		<nd ref="4545556135"/>
+		<nd ref="4545556136"/>
+		<nd ref="4545556137"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574727" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556141"/>
+		<nd ref="4545556138"/>
+		<nd ref="4545556139"/>
+		<nd ref="4545556140"/>
+		<nd ref="4545556141"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574728" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556145"/>
+		<nd ref="4545556142"/>
+		<nd ref="4545556143"/>
+		<nd ref="4545556144"/>
+		<nd ref="4545556145"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574729" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556149"/>
+		<nd ref="4545556146"/>
+		<nd ref="4545556147"/>
+		<nd ref="4545556148"/>
+		<nd ref="4545556149"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574730" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556153"/>
+		<nd ref="4545556150"/>
+		<nd ref="4545556151"/>
+		<nd ref="4545556152"/>
+		<nd ref="4545556153"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574731" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556157"/>
+		<nd ref="4545556154"/>
+		<nd ref="4545556155"/>
+		<nd ref="4545556156"/>
+		<nd ref="4545556157"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574732" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556163"/>
+		<nd ref="4545556160"/>
+		<nd ref="4545556161"/>
+		<nd ref="4545556162"/>
+		<nd ref="4545556159"/>
+		<nd ref="4545556158"/>
+		<nd ref="4545556163"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574733" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556167"/>
+		<nd ref="4545556164"/>
+		<nd ref="4545556165"/>
+		<nd ref="4545556166"/>
+		<nd ref="4545556167"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574734" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556175"/>
+		<nd ref="4545556172"/>
+		<nd ref="4545556171"/>
+		<nd ref="4545556169"/>
+		<nd ref="4545556168"/>
+		<nd ref="4545556170"/>
+		<nd ref="4545556173"/>
+		<nd ref="4545556174"/>
+		<nd ref="4545556175"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574735" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556179"/>
+		<nd ref="4545556176"/>
+		<nd ref="4545556177"/>
+		<nd ref="4545556178"/>
+		<nd ref="4545556179"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574736" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556183"/>
+		<nd ref="4545556180"/>
+		<nd ref="4545556181"/>
+		<nd ref="4545556182"/>
+		<nd ref="4545556183"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574737" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556189"/>
+		<nd ref="4545556186"/>
+		<nd ref="4545556184"/>
+		<nd ref="4545556185"/>
+		<nd ref="4545556187"/>
+		<nd ref="4545556188"/>
+		<nd ref="4545556189"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574738" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556193"/>
+		<nd ref="4545556190"/>
+		<nd ref="4545556191"/>
+		<nd ref="4545556192"/>
+		<nd ref="4545556193"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574739" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556197"/>
+		<nd ref="4545556194"/>
+		<nd ref="4545556195"/>
+		<nd ref="4545556196"/>
+		<nd ref="4545556197"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574740" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556205"/>
+		<nd ref="4545556202"/>
+		<nd ref="4545556201"/>
+		<nd ref="4545556199"/>
+		<nd ref="4545556198"/>
+		<nd ref="4545556200"/>
+		<nd ref="4545556203"/>
+		<nd ref="4545556204"/>
+		<nd ref="4545556205"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574741" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556209"/>
+		<nd ref="4545556206"/>
+		<nd ref="4545556207"/>
+		<nd ref="4545556208"/>
+		<nd ref="4545556209"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574742" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556213"/>
+		<nd ref="4545556210"/>
+		<nd ref="4545556211"/>
+		<nd ref="4545556212"/>
+		<nd ref="4545556213"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574743" version="1" timestamp="2016-12-08T21:40:14Z" changeset="0">
+		<nd ref="4545556217"/>
+		<nd ref="4545556214"/>
+		<nd ref="4545556215"/>
+		<nd ref="4545556216"/>
+		<nd ref="4545556217"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574744" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556223"/>
+		<nd ref="4545556220"/>
+		<nd ref="4545556221"/>
+		<nd ref="4545556222"/>
+		<nd ref="4545556218"/>
+		<nd ref="4545556219"/>
+		<nd ref="4545556223"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574745" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556233"/>
+		<nd ref="4545556230"/>
+		<nd ref="4545556229"/>
+		<nd ref="4545556227"/>
+		<nd ref="4545556226"/>
+		<nd ref="4545556228"/>
+		<nd ref="4545556231"/>
+		<nd ref="4545556225"/>
+		<nd ref="4545556224"/>
+		<nd ref="4545556232"/>
+		<nd ref="4545556233"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574746" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556237"/>
+		<nd ref="4545556234"/>
+		<nd ref="4545556235"/>
+		<nd ref="4545556236"/>
+		<nd ref="4545556237"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574747" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556241"/>
+		<nd ref="4545556238"/>
+		<nd ref="4545556239"/>
+		<nd ref="4545556240"/>
+		<nd ref="4545556241"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574748" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556245"/>
+		<nd ref="4545556242"/>
+		<nd ref="4545556243"/>
+		<nd ref="4545556244"/>
+		<nd ref="4545556245"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574749" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556249"/>
+		<nd ref="4545556246"/>
+		<nd ref="4545556247"/>
+		<nd ref="4545556248"/>
+		<nd ref="4545556249"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574750" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556253"/>
+		<nd ref="4545556250"/>
+		<nd ref="4545556251"/>
+		<nd ref="4545556252"/>
+		<nd ref="4545556253"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574751" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556261"/>
+		<nd ref="4545556258"/>
+		<nd ref="4545556259"/>
+		<nd ref="4545556260"/>
+		<nd ref="4545556256"/>
+		<nd ref="4545556255"/>
+		<nd ref="4545556254"/>
+		<nd ref="4545556257"/>
+		<nd ref="4545556261"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574752" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556269"/>
+		<nd ref="4545556266"/>
+		<nd ref="4545556267"/>
+		<nd ref="4545556264"/>
+		<nd ref="4545556263"/>
+		<nd ref="4545556262"/>
+		<nd ref="4545556265"/>
+		<nd ref="4545556268"/>
+		<nd ref="4545556269"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574753" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556273"/>
+		<nd ref="4545556270"/>
+		<nd ref="4545556271"/>
+		<nd ref="4545556272"/>
+		<nd ref="4545556273"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574754" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556277"/>
+		<nd ref="4545556274"/>
+		<nd ref="4545556275"/>
+		<nd ref="4545556276"/>
+		<nd ref="4545556277"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574755" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556281"/>
+		<nd ref="4545556278"/>
+		<nd ref="4545556279"/>
+		<nd ref="4545556280"/>
+		<nd ref="4545556281"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574756" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556289"/>
+		<nd ref="4545556286"/>
+		<nd ref="4545556285"/>
+		<nd ref="4545556283"/>
+		<nd ref="4545556282"/>
+		<nd ref="4545556284"/>
+		<nd ref="4545556287"/>
+		<nd ref="4545556288"/>
+		<nd ref="4545556289"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574757" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556297"/>
+		<nd ref="4545556294"/>
+		<nd ref="4545556292"/>
+		<nd ref="4545556291"/>
+		<nd ref="4545556290"/>
+		<nd ref="4545556293"/>
+		<nd ref="4545556295"/>
+		<nd ref="4545556296"/>
+		<nd ref="4545556297"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574758" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556301"/>
+		<nd ref="4545556298"/>
+		<nd ref="4545556299"/>
+		<nd ref="4545556300"/>
+		<nd ref="4545556301"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574759" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556309"/>
+		<nd ref="4545556306"/>
+		<nd ref="4545556305"/>
+		<nd ref="4545556303"/>
+		<nd ref="4545556302"/>
+		<nd ref="4545556304"/>
+		<nd ref="4545556307"/>
+		<nd ref="4545556308"/>
+		<nd ref="4545556309"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574760" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="1179817186"/>
+		<nd ref="4545556310"/>
+		<tag k="foot" v="yes"/>
+		<tag k="name" v="Chiswick Close"/>
+		<tag k="horse" v="yes"/>
+		<tag k="lanes" v="2"/>
+		<tag k="access" v="yes"/>
+		<tag k="oneway" v="no"/>
+		<tag k="bicycle" v="yes"/>
+		<tag k="highway" v="residential"/>
+		<tag k="surface" v="asphalt"/>
+		<tag k="cycleway" v="no"/>
+		<tag k="maxspeed" v="30 mph"/>
+		<tag k="sidewalk" v="both"/>
+		<tag k="motor_vehicle" v="yes"/>
+	</way>
+	<way id="458574761" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556318"/>
+		<nd ref="4545556315"/>
+		<nd ref="4545556316"/>
+		<nd ref="4545556312"/>
+		<nd ref="4545556311"/>
+		<nd ref="4545556317"/>
+		<nd ref="4545556313"/>
+		<nd ref="4545556314"/>
+		<nd ref="4545556318"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574762" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556328"/>
+		<nd ref="4545556325"/>
+		<nd ref="4545556322"/>
+		<nd ref="4545556320"/>
+		<nd ref="4545556319"/>
+		<nd ref="4545556321"/>
+		<nd ref="4545556326"/>
+		<nd ref="4545556324"/>
+		<nd ref="4545556323"/>
+		<nd ref="4545556327"/>
+		<nd ref="4545556328"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574763" version="1" timestamp="2016-12-08T21:40:15Z" changeset="0">
+		<nd ref="4545556332"/>
+		<nd ref="4545556329"/>
+		<nd ref="4545556330"/>
+		<nd ref="4545556331"/>
+		<nd ref="4545556332"/>
+		<tag k="building" v="yes"/>
+	</way>
+	<way id="458574764" version="1" timestamp="2016-12-08T21:40:16Z" changeset="0">
+		<nd ref="4545556336"/>
+		<nd ref="4545556333"/>
+		<nd ref="4545556334"/>
+		<nd ref="4545556335"/>
+		<nd ref="4545556336"/>
+		<tag k="building" v="yes"/>
+	</way>
+</osm>
