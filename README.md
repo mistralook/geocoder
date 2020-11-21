@@ -12,7 +12,7 @@
     Основная логика: main.py
     Тесты: tests/
     Необходимые функции: /utils
-    База OSM: NORMAL-DB.osm
+    База OSM: mixed_test.osm
     Рабочая SQL база: parsed_data.db
 
 ## Тесты:

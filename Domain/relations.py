@@ -12,7 +12,8 @@ class Relations(AbstractTable):
 
     def insert_into(self, values):
         sql = f"""INSERT INTO Relations (id, member_type, ref, role) 
-                  VALUES ('{values[0]}', '{values[1]}', '{values[2]}', '{values[3]}')"""
+                  VALUES ('{values[0]}', '{values[1]}', 
+                          '{values[2]}', '{values[3]}')"""
         print(sql)
         return self.sql_execute(sql)
 

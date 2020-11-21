@@ -1,6 +1,7 @@
 from Domain.abstract_table import AbstractTable
 from utils import make_criteria
 
+
 class RelationTags(AbstractTable):
     def __init__(self):
         self.id = ''

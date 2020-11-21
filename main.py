@@ -80,7 +80,8 @@ def main():
         c = con.cursor()
         c.execute(
             'CREATE TABLE IF NOT EXISTS Relations '
-            '("id" INTEGER, "member_type", "ref", "role");')
+            '("id" INTEGER PRIMARY KEY , "id_relation", '
+            '"member_type", "ref", "role");')
         c.execute(
             'CREATE TABLE IF NOT EXISTS RelationTags '
             '("id" INTEGER PRIMARY KEY, "id_relation", "id_tag");')

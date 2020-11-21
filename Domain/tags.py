@@ -9,7 +9,8 @@ class Tags(AbstractTable):
         self.value = ''
 
     def insert_into(self, values):
-        sql = f"INSERT INTO Tags (id, key, value) VALUES ('{values[0]}', '{values[1]}', '{values[2]}')"
+        sql = f"""INSERT INTO Tags (id, key, value) 
+                VALUES ('{values[0]}', '{values[1]}', '{values[2]}')"""
         print(sql)
         return self.sql_execute(sql)
 
