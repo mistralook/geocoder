@@ -11,7 +11,7 @@ class WaysNodes(AbstractTable):
     def insert_into(self, values):
         sql = f"""INSERT INTO WayNodes (id_way, id_node) 
                   VALUES ('{values[0]}', '{values[1]}')"""
-        print(sql)
+        # print(sql)
         return self.sql_execute(sql)
 
     def update(self, table, setter: tuple, *args, **kwargs):

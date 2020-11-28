@@ -10,7 +10,7 @@ class Nodes(AbstractTable):
 
     def insert_into(self, values):
         sql = f"INSERT INTO Nodes VALUES ({', '.join(values)})"
-        print(sql)
+        # print(sql)
         return self.sql_execute(sql)
 
     def update(self, table, setter: tuple, *args, **kwargs):
@@ -23,7 +23,6 @@ class Nodes(AbstractTable):
         id = node['id']
         lat = node['lat']
         lon = node['lon']
-        print(id, lat, lon)
         self.insert_into((id, lat, lon))
 
     @property

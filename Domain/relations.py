@@ -11,10 +11,10 @@ class Relations(AbstractTable):
         self.role = ''
 
     def insert_into(self, values):
-        sql = f"""INSERT INTO Relations (id, member_type, ref, role) 
+        sql = f"""INSERT INTO Relations (id_relation, member_type, ref, role) 
                   VALUES ('{values[0]}', '{values[1]}', 
                           '{values[2]}', '{values[3]}')"""
-        print(sql)
+        # print(sql)
         return self.sql_execute(sql)
 
     def update(self, table, setter: tuple, *args, **kwargs):
