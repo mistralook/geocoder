@@ -7,8 +7,10 @@ from Domain import Nodes, Tags, NodesTags, \
 # osm_db = 'way_base.osm'
 # osm_db = 'node_base.osm'
 # osm_db = 'relation_base.osm'
+# osm_db = 'way_building_base.osm'
 # osm_db = 'mixed_base.osm'
-osm_db = 'way_building_base.osm'
+osm_db = 'london.osm'
+# osm_db = 'test.osm'
 sql_db = 'parsed_data.db'
 
 
@@ -28,6 +30,7 @@ class Parser:
         self.tag_id = 1
         self.last_nodes = []
         self.temp = []
+        self.nodes_dict = dict()
 
     def parse_string(self, string, name):
         if name == "relation":
@@ -57,22 +60,22 @@ class Parser:
 
         if name == "node":
             if '/' in string:
-                self.nodes.parse_string(string)
+                # self.nodes.parse_string(string)
+                self.nodes_dict[string['id']] = (string['lat'], string['lon'])
             elif '/' not in string:
                 self.parent_element = (string['id'], 'node')
-                self.nodes.parse_string(string)
-
+                # self.nodes.parse_string(string)
+                self.nodes_dict[string['id']] = (string['lat'], string['lon'])
         if name == "tag":
-            self.tags.parse_string(string, self.tag_id)
             if self.parent_element[1] == 'node':
-                self.nodes_tags.parse_string(self.parent_element[0],
-                                             self.tag_id)
-                self.tag_id += 1
+                pass
+            else:
+                self.tags.parse_string(string, self.tag_id)
             if self.parent_element[1] == 'way':
                 if string['k'] == 'building':
                     self.ways_buildings.parse_string(
                         self.parent_element[0],
-                        self.last_nodes)
+                        self.last_nodes, self.nodes_dict)
                 self.ways_tags.parse_string(self.parent_element[0],
                                             self.tag_id)
                 self.tag_id += 1
@@ -84,41 +87,46 @@ class Parser:
     def parse_db(self, name, attr):
         self.parse_string(attr, name)
 
+    def run(self):
+        with sql.connect(sql_db) as con:
+            c = con.cursor()
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS Relations '
+                '("id" INTEGER PRIMARY KEY AUTOINCREMENT , "id_relation", '
+                '"member_type", "ref", "role");')
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS RelationTags '
+                '("id" INTEGER PRIMARY KEY, "id_relation", "id_tag");')
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS WayTags '
+                '("id" INTEGER PRIMARY KEY, "id_way", "id_tag");')
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS WayNodes '
+                '("id" INTEGER PRIMARY KEY, "id_way", "id_node");')
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS Nodes '
+                '("id" PRIMARY KEY, "lat", "lon");')
+            c.execute(
+                'CREATE INDEX in_node_id ON Nodes(id);'
+            )
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS Tags '
+                '("id" INTEGER, "key", "value");')
+            c.execute(
+                'CREATE TABLE IF NOT EXISTS WayBuildings '
+                '("id" INTEGER PRIMARY KEY, "id_way", "lat", "lon");')
+
+        parser = xml_parser.ParserCreate()
+        parser.StartElementHandler = self.parse_db
+        with open(osm_db, 'rb') as db:
+            parser.ParseFile(db)
+        self.ways_buildings.execute_from_list()
+        self.relations.execute_from_list()
+
 
 def main():
     ps = Parser()
-    with sql.connect(sql_db) as con:
-        c = con.cursor()
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS Relations '
-            '("id" INTEGER PRIMARY KEY AUTOINCREMENT , "id_relation", '
-            '"member_type", "ref", "role");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS RelationTags '
-            '("id" INTEGER PRIMARY KEY, "id_relation", "id_tag");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS WayTags '
-            '("id" INTEGER PRIMARY KEY, "id_way", "id_tag");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS WayNodes '
-            '("id" INTEGER PRIMARY KEY, "id_way", "id_node");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS Nodes '
-            '("id" PRIMARY KEY, "lat", "lon");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS NodesTags '
-            '("id" INTEGER PRIMARY KEY, "id_node", "id_tag");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS Tags '
-            '("id" INTEGER PRIMARY KEY, "key", "value");')
-        c.execute(
-            'CREATE TABLE IF NOT EXISTS WayBuildings '
-            '("id" INTEGER PRIMARY KEY, "id_way", "coordinates");')
-
-    parser = xml_parser.ParserCreate()
-    parser.StartElementHandler = ps.parse_db
-    with open(osm_db, 'rb') as db:
-        parser.ParseFile(db)
+    ps.run()
 
 
 if __name__ == '__main__':
