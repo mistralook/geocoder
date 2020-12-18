@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="osmconvert 0.8.8" timestamp="2020-11-08T21:41:03Z">
+	<node id="111" lat="56.829564" lon="60.601121" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="222" lat="56.829302" lon="60.601194" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="333" lat="56.829261" lon="60.600726" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="444" lat="56.829524" lon="60.60065" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="1" lat="56.84019" lon="60.61500" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="2" lat="56.84049" lon="60.61491" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="3" lat="56.84052" lon="60.600651" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="4" lat="56.84042" lon="60.61523" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="5" lat="56.84048" lon="60.61576" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="6" lat="56.84051" lon="60.61575" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="7" lat="56.84057" lon="60.61630" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="8" lat="56.84055" lon="60.61631" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="9" lat="56.84061" lon="60.61687" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="10" lat="56.84071" lon="60.61683" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="11" lat="56.84075" lon="60.61711" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="12" lat="56.84043" lon="60.61723" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="13" lat="56.84040" lon="60.61694" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="14" lat="56.84045" lon="60.61692" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="15" lat="56.84038" lon="60.61636" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="16" lat="56.84031" lon="60.61639" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="17" lat="56.84025" lon="60.61585" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="18" lat="56.84032" lon="60.61582" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="19" lat="56.84026" lon="60.61530" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<node id="20" lat="56.84022" lon="60.61531" version="1" timestamp="2013-02-02T00:27:01Z" changeset="0"/>
+	<way id="12345" version="1" timestamp="2009-03-15T19:41:22Z" changeset="0">
+		<nd ref="111"/>
+		<nd ref="222"/>
+		<nd ref="333"/>
+		<nd ref="444"/>
+		<nd ref="111"/>
+		<tag k="building" v="yes"/>
+		<tag k="addr:street" v="8 Marta"/>
+		<tag k="addr:housenumber" v="36"/>
+	</way>
+	<way id="1337" version="1" timestamp="2020-03-15T19:41:22Z" changeset="0">
+		<nd ref="1"/>
+		<nd ref="2"/>
+		<nd ref="3"/>
+		<nd ref="4"/>
+		<nd ref="5"/>
+		<nd ref="6"/>
+		<nd ref="7"/>
+		<nd ref="8"/>
+		<nd ref="9"/>
+		<nd ref="10"/>
+		<nd ref="11"/>
+		<nd ref="12"/>
+		<nd ref="13"/>
+		<nd ref="14"/>
+		<nd ref="15"/>
+		<nd ref="16"/>
+		<nd ref="17"/>
+		<nd ref="18"/>
+		<nd ref="19"/>
+		<nd ref="20"/>
+		<nd ref="1"/>
+		<tag k="building" v="yes"/>
+		<tag k="addr:street" v="Prospekt Lenina"/>
+		<tag k="addr:housenumber" v="51"/>
+	</way>
+</osm>
