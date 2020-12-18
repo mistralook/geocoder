@@ -9,15 +9,16 @@ class NodesTags(AbstractTable):
         self.id_tag = ''
 
     def insert_into(self, values):
-        sql = f"""INSERT INTO NodesTags (id_node, id_tag) 
-                  VALUES ('{values[0]}', '{values[1]}')"""
-        # print(sql)
+        sql = f"INSERT INTO NodesTags (id_node, id_tag)" \
+              f" VALUES ('{values[0]}', '{values[1]}')"
+        print(sql)
         return self.sql_execute(sql)
 
     def update(self, table, setter: tuple, *args, **kwargs):
         criteria = make_criteria(**kwargs)
-        sql = f"""UPDATE {table} 
-                  SET {setter[0]} = {setter[1]} WHERE {criteria}"""
+        sql = f"UPDATE {table}" \
+              f" SET {setter[0]} = {setter[1]}" \
+              f" WHERE {criteria}"
         return self.sql_execute(sql)
 
     def parse_string(self, node_id, tag_id):
@@ -26,4 +27,3 @@ class NodesTags(AbstractTable):
     @property
     def table_name(self):
         return 'NodesTags'
-

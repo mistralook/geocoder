@@ -7,17 +7,24 @@ class WaysNodes(AbstractTable):
         self.id = ''
         self.id_way = ''
         self.id_node = ''
+        self.list = list()
+        self.index = 0
 
     def insert_into(self, values):
-        sql = f"""INSERT INTO WayNodes (id_way, id_node) 
-                  VALUES ('{values[0]}', '{values[1]}')"""
-        # print(sql)
-        return self.sql_execute(sql)
+        # sql = f"INSERT INTO WayNodes (id_way, id_node)" \
+        #       f" VALUES ('{values[0]}', '{values[1]}')"
+        # return self.sql_execute(sql)
+        self.list.append(values)
+        if len(self.list) % 10000 == 0:
+            s = f"INSERT INTO WayNodes(id_way, id_node) VALUES (?, ?)"
+            self.sql_execute(s, self.list[self.index:])
+            self.index += 10000
 
     def update(self, table, setter: tuple, *args, **kwargs):
         criteria = make_criteria(**kwargs)
-        sql = f"""UPDATE {table} 
-                  SET {setter[0]} = {setter[1]} WHERE {criteria}"""
+        sql = f"UPDATE {table}" \
+              f" SET {setter[0]} = {setter[1]}" \
+              f" WHERE {criteria}"
         return self.sql_execute(sql)
 
     def parse_string(self, way_id, node_id):

@@ -10,47 +10,47 @@ class WayBuildings(AbstractTable):
         self.id = ''
         self.id_node = ''
         self.id_tag = ''
+        self.list = list()
+        self.node_list = list()
 
     def insert_into(self, values):
-        sql = f"""INSERT INTO WayBuildings (id_way, coordinates) 
-                  VALUES ('{values[0]}', '{values[1]}')"""
-        return self.sql_execute(sql)
+        self.list.append(values)
+
+    def execute_from_list(self):
+        s = f"INSERT INTO" \
+            f" WayBuildings(id_way, lat, lon)" \
+            f" VALUES (?, ?, ?)"
+        self.sql_execute(s, self.list)
+        self.list.clear()
 
     def update(self, table, setter: tuple, *args, **kwargs):
         criteria = make_criteria(**kwargs)
-        sql = f"""UPDATE {table} 
-                  SET {setter[0]} = {setter[1]} WHERE {criteria}"""
+        sql = f"UPDATE {table}" \
+              f" SET {setter[0]} = {setter[1]}" \
+              f" WHERE {criteria}"
         return self.sql_execute(sql)
 
-    def parse_string(self, way_id, last_nodes):
-        coords = self.get_coords(last_nodes)
-        self.insert_into((way_id, coords))
+    def parse_string(self, way_id, last_nodes, nodes_dict):
+        coords = list()
+        for node in last_nodes:
+            coords.append(nodes_dict[node])
+        a = self.get_coords(coords)
+        self.insert_into((way_id, *a))
+        if len(self.list) % 1000 == 0:
+            self.execute_from_list()
 
     @staticmethod
-    def get_coords(nodes):
-        centroid = [0, 0]
-        signed_area = 0
-        with sqlite.connect(sql_db) as con:
-            c = con.cursor()
-            result = []
-            for node in nodes[:-1]:
-                s = f'SELECT lat, lon FROM Nodes WHERE id={int(node)}'
-                c.execute(s)
-                result.append(*c.fetchall())
-            c.close()
-        for i in range(len(result)):
-            cur_lat, cur_lon = result[i]
-            next_lat, next_lon = result[(i+1) % len(result)]
-            a = cur_lat*next_lon - next_lat*cur_lon
-            signed_area += a
-            centroid[0] += (cur_lat + next_lat)*a
-            centroid[1] += (cur_lon + next_lon)*a
-        signed_area /= 2
-        centroid[0] /= (6 * signed_area)
-        centroid[1] /= (6 * signed_area)
-        return centroid
+    def get_coords(coords_list):
+        node_count = 0
+        coords = [0, 0]
+        for coord in coords_list[:-1]:
+            node_count += 1
+            coords[0] += float(coord[0])
+            coords[1] += float(coord[1])
+        coords[0] /= node_count
+        coords[1] /= node_count
+        return coords
 
     @property
     def table_name(self):
         return 'WayBuildings'
-
