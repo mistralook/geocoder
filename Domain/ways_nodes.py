@@ -1,34 +1,25 @@
 from Domain.abstract_table import AbstractTable
-from utils import make_criteria
 
 
 class WaysNodes(AbstractTable):
-    def __init__(self):
-        self.id = ''
-        self.id_way = ''
-        self.id_node = ''
+    def __init__(self, cursor=None):
+        super().__init__(cursor)
         self.list = list()
-        self.index = 0
 
     def insert_into(self, values):
-        # sql = f"INSERT INTO WayNodes (id_way, id_node)" \
-        #       f" VALUES ('{values[0]}', '{values[1]}')"
-        # return self.sql_execute(sql)
         self.list.append(values)
-        if len(self.list) % 10000 == 0:
-            s = f"INSERT INTO WayNodes(id_way, id_node) VALUES (?, ?)"
-            self.sql_execute(s, self.list[self.index:])
-            self.index += 10000
 
-    def update(self, table, setter: tuple, *args, **kwargs):
-        criteria = make_criteria(**kwargs)
-        sql = f"UPDATE {table}" \
-              f" SET {setter[0]} = {setter[1]}" \
-              f" WHERE {criteria}"
-        return self.sql_execute(sql)
+    def execute_from_list(self):
+        s = f"INSERT INTO" \
+            f" WayNodes(id_way, id_node)" \
+            f" VALUES (?, ?)"
+        self.sql_execute(s, self.list)
+        self.list.clear()
 
     def parse_string(self, way_id, node_id):
         self.insert_into((way_id, node_id))
+        if len(self.list) % 10000 == 0:
+            self.execute_from_list()
 
     @property
     def table_name(self):
